@@ -1,12 +1,14 @@
-import './assets/main.css';
-
 import { createApp } from 'vue';
-import App from './App.vue';
 import { Quasar } from 'quasar';
-import 'quasar/dist/quasar.css'; // Garante que o CSS do Quasar está carregado
+import '@quasar/extras/material-icons/material-icons.css'; 
+import 'quasar/src/css/index.sass'; 
+
+import App from './App.vue';
 
 const app = createApp(App);
 
-app.use(Quasar); // Aqui você registra o Quasar corretamente
+app.use(Quasar, {
+  plugins: {}, 
+});
 
 app.mount('#app');

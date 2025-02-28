@@ -6,7 +6,6 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import { quasar, transformAssetUrls } from '@quasar/vite-plugin'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [
     vue({
@@ -14,7 +13,7 @@ export default defineConfig({
     }),
     vueJsx(),
     vueDevTools(),
-    quasar(),  // Adicionando o plugin do Quasar aqui
+    quasar(), 
   ],
   resolve: {
     alias: {
