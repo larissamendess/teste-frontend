@@ -121,7 +121,6 @@ const buscarHoteis = () => {
     const placeId = cidadeEncontrada.value.placeId;
     const dadosHoteis = hoteis.find((h) => h.placeId === placeId);
     hoteisEncontrados.value = dadosHoteis ? dadosHoteis.hotels : [];
-    console.log(hoteisEncontrados);
   } else {
     hoteisEncontrados.value = [];
   }
